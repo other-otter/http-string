@@ -1,5 +1,5 @@
 (asdf:defsystem :http-string
-     :description "linnil-webserver with cl-async"
+     :description "http api with cl-async"
      :version "0.0.1"
      :author "@other-otter"
      :depends-on (:babel
