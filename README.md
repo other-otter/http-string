@@ -60,6 +60,8 @@ rlwrap sbcl
 
 ```text
 #|
+lisp = list-process
+
 input-list-->your-function-->output-list
 
 what in input-list
