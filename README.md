@@ -31,7 +31,8 @@ rlwrap sbcl
 ```common-lisp
 (setf http-string::the-server-address "127.0.0.1"
       http-string::the-server-port 8080)
-      
+
+;http://127.0.0.1:8080/
 ```
 ```common-lisp
 (defun app-index (the-list)
