@@ -12,7 +12,7 @@
     (when (stringp the-path)
         (setf (gethash the-path function-map) the-function)));
 
-(defun rem-app (the-path the-function)
+(defun rem-app (the-path)
     (when (stringp the-path)
         (remhash the-path function-map)))
 
