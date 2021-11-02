@@ -37,7 +37,7 @@ rlwrap sbcl
 ```common-lisp
 (defun app-index (the-list)
     (let (  (return-hair-number 200)
-            (return-face-list   '("server: cl-async"))
+            (return-face-list   (list "server: cl-async" "Content-type: text/plain")
             (return-body-string (format nil "~S" the-list)))
         (list   :http-hair-code return-hair-number
                 :http-face-list return-face-list
@@ -58,7 +58,7 @@ rlwrap sbcl
 
 ## process
 
-```common-lisp
+```text
 #|
 input-list-->your-function-->output-list
 
@@ -71,8 +71,14 @@ what in input-list
   
 what in output-list
   :http-hair-code
+      type: number 
+      example: 200 301 404 
   :http-face-list
+      type: list 
+      example: '("X-lib: libuv" "X-sys: ubuntu" "X-timezone: UTC+8")
   :http-body-utf8
+      type: string 
+      example: "say hi in http protocol"
   
 |#
 ```
