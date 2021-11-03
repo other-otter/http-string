@@ -37,7 +37,7 @@ rlwrap sbcl
 ```common-lisp
 (defun app-index (the-list)
     (let (  (return-hair-number 200)
-            (return-face-list   (list "server: cl-async" "Content-type: text/plain")
+            (return-face-list   (list "server: cl-async" "content-type: text/plain")
             (return-body-string (format nil "~S" the-list)))
         (list   :http-hair-code return-hair-number
                 :http-face-list return-face-list
@@ -95,6 +95,23 @@ what is in output-list
 |#
 ```
 
+```text
+how to get the value from input-list in your-function
+      function: getf
+      example: (getf the-list :http-body-string) ;"the-http-body"
+
+how to get the value-string from key-value-list in your-function
+      function: getf http-string::get-field
+      example:    (http-string::get-field (getf the-list :http-var-list) "aa")
+                  (http-string::get-field (getf the-list :http-field-list) "Host:")
+                  
+how to make output-list in your-function
+      function: list
+      example: (list    :http-hair-code 200 
+                        :http-face-list (list "X-field-a: a" "X-field-b: b") 
+                        :http-body-utf8 "the-example-http-body-string" )
+```
+
 ## start
 
 ```common-lisp
@@ -108,8 +125,8 @@ what is in output-list
 ```common-lisp
 (defun app-index (the-list)
     (let (  (return-hair-number 200)
-            (return-face-list   '("server: cl-async"))
-            (return-body-string (format nil "~S" (getf the-list :http-var-list))))
+            (return-face-list   '("Server: cl-async" "Content-Type: text/html"))
+            (return-body-string (format nil "<h2>~S</h2>" (getf the-list :http-var-list))))
         (list   :http-hair-code return-hair-number
                 :http-face-list return-face-list
                 :http-body-utf8 return-body-string)))
