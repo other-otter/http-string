@@ -132,7 +132,10 @@ what is in output-list
 
 ## more
 
-[install-lisp](https://other-otter.app/2021/11/install-the-development-environment-of-lisp/)   
-[install-package](https://other-otter.app/2021/11/load-and-use-lisp-package/)   
-[cl-async-example](http://orthecreedence.github.io/cl-async/examples)   
-[string-handle](https://github.com/spratt/cl-websocket/blob/master/cl-websocket.lisp)   
+```common-lisp
+;https://other-otter.app/2021/11/install-the-development-environment-of-lisp/   
+;https://other-otter.app/2021/11/load-and-use-lisp-package/   
+;http://orthecreedence.github.io/cl-async/examples   
+;https://github.com/spratt/cl-websocket/blob/master/cl-websocket.lisp   
+
+```
