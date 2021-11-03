@@ -32,7 +32,12 @@ rlwrap sbcl
 (setf http-string::the-server-address "127.0.0.1"
       http-string::the-server-port 8080)
 
+;http-string::the-server-address 
+;     type: string
+;     example: "host-ip-address" "domain-name.web"
+
 ;http://127.0.0.1:8080/
+
 ```
 ```common-lisp
 (defun app-index (the-list)
