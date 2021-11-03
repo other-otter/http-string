@@ -96,20 +96,25 @@ what is in output-list
 ```
 
 ```text
+#|
 how to get the value from input-list in your-function
       function: getf
       example: (getf the-list :http-body-string) ;"the-http-body"
 
 how to get the value-string from key-value-list in your-function
       function: getf http-string::get-field
-      example:    (http-string::get-field (getf the-list :http-var-list) "aa")
-                  (http-string::get-field (getf the-list :http-field-list) "Host:")
+      example:    (http-string::get-field (getf the-list :http-var-list) "aa") ;"2"
+                  (http-string::get-field (getf the-list :http-field-list) "Host:") ;"127.0.0.1"
                   
 how to make output-list in your-function
       function: list
       example: (list    :http-hair-code 200 
                         :http-face-list (list "X-field-a: a" "X-field-b: b") 
                         :http-body-utf8 "the-example-http-body-string" )
+                        
+https://github.com/other-otter/http-string/blob/main/test/app-function.lisp
+
+#|
 ```
 
 ## start
@@ -154,5 +159,4 @@ how to make output-list in your-function
 ;https://other-otter.app/2021/11/load-and-use-lisp-package/   
 ;http://orthecreedence.github.io/cl-async/examples   
 ;https://github.com/spratt/cl-websocket/blob/master/cl-websocket.lisp   
-
 ```
