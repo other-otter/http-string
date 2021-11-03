@@ -64,7 +64,7 @@ lisp = list-process
 
 input-list-->your-function-->output-list
 
-what in input-list
+what is in input-list
   :http-method-string 
       type: string
       example: "GET" "POST"
@@ -81,7 +81,7 @@ what in input-list
       type: string
       example: "[1,2,3]"
   
-what in output-list
+what is in output-list
   :http-hair-code
       type: number 
       example: 200 301 404 
@@ -132,7 +132,7 @@ what in output-list
 
 ## more
 
-[install-lisp](https://other-otter.app/2021/11/install-the-development-environment-of-lisp/)
-[install-package](https://other-otter.app/2021/11/load-and-use-lisp-package/)
-[cl-async-example](http://orthecreedence.github.io/cl-async/examples)
-[string-handle](https://github.com/spratt/cl-websocket/blob/master/cl-websocket.lisp)
+[install-lisp](https://other-otter.app/2021/11/install-the-development-environment-of-lisp/)   
+[install-package](https://other-otter.app/2021/11/load-and-use-lisp-package/)   
+[cl-async-example](http://orthecreedence.github.io/cl-async/examples)   
+[string-handle](https://github.com/spratt/cl-websocket/blob/master/cl-websocket.lisp)   
