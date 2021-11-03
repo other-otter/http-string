@@ -2,7 +2,7 @@
 
 ## description
 
-the string is transmitted through the http protocol, 
+the string is transmitted through the http protocol,   
 based on the package cl-async (libuv)
 
 ## require
@@ -46,7 +46,7 @@ rlwrap sbcl
 (http-string::add-app "/" #'app-index)
 
 #|
-(defun page-funtion (the-list)
+(defun page-funtion (input-list)
   (list :http-hair-code 200
         :http-face-list '()
         :http-body-utf8 " "))
@@ -66,10 +66,20 @@ input-list-->your-function-->output-list
 
 what in input-list
   :http-method-string 
+      type: string
+      example: "GET" "POST"
   :http-path-string
+      type: string
+      example: "/abc/def"
   :http-var-list
+      type: list
+      example: '(("a" "1") ("aa" "2"))
   :http-field-list
+      type: list
+      example: '(("Token:" "123") ("X-note:" "the-note"))
   :http-body-string
+      type: string
+      example: "[1,2,3]"
   
 what in output-list
   :http-hair-code
@@ -89,7 +99,8 @@ what in output-list
 
 ```common-lisp
 (http-string::run-main)
-
+;http-string::main is start in main thread
+;http-string::run-main is start in other thread
 ```
 
 ## redefine 
@@ -121,4 +132,7 @@ what in output-list
 
 ## more
 
-### tutorials link
+[install-lisp](https://other-otter.app/2021/11/install-the-development-environment-of-lisp/)
+[install-package](https://other-otter.app/2021/11/load-and-use-lisp-package/)
+[cl-async-example](http://orthecreedence.github.io/cl-async/examples)
+[string-handle](https://github.com/spratt/cl-websocket/blob/master/cl-websocket.lisp)
