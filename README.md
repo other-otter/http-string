@@ -2,12 +2,17 @@
 
 ## description
 
-the string is transmitted through the http protocol,   
-based on the package cl-async (libuv)
+```text
+the string is transmitted through the http protocol, based on the package cl-async (libuv)
+
+http-string-mini is a more easy-to-use http-string parsing and generating package
+```
 
 ## require
 
-sbcl quicklisp libuv
+```common-lisp
+;sbcl quicklisp libuv
+```
 
 ## load
 
