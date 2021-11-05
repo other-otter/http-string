@@ -7,7 +7,7 @@
                   :cl-async
                   :local-time
                   :log4cl)
-     :components ((:file "packages")
+     :components ((:file "package")
                   (:module code
                    :serial t
                    :components((:file "read-input-string")
