@@ -160,7 +160,7 @@ https://github.com/other-otter/http-string/blob/main/test/app-function.lisp
 ;http-string::rem-app path-string
 ;http-string::get-field field-key-val-list field-key-string
 ;http-string::add-err error-number error-string
-;http-string::split-string the-string :delimiter char-vector :max list-length)
+;http-string::split-string the-string :delimiter char-vector :max list-length
 
 ```
 
