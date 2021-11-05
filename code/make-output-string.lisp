@@ -9,7 +9,7 @@
                 (format t "~A~c~c" the-field #\return #\newline)) the-list))
         (format nil "X-Power-by: common-lisp~c~c" #\return #\newline)))
 
-(defun make-http-string (&key   (http-hair-code 500) 
+(defun make-http-string (&key   (http-hair-code 501) 
                                 (http-face-list nil) 
                                 (http-body-utf8 "something-wrong"))
     (format nil 
