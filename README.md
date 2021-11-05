@@ -2,10 +2,11 @@
 
 ## description
 
-```text
+```common-lisp
 the string is transmitted through the http protocol, based on the package cl-async (libuv)
 
-http-string-mini is a more easy-to-use http-string parsing and generating package
+package http-string-mini is a more easy-to-use http-string parsing and generating package
+;https://github.com/other-otter/http-string-mini
 ```
 
 ## require
