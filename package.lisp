@@ -15,7 +15,7 @@
              make-http-string
              add-err
              make-output-string
-             the-server-address
-             the-server-port
+             *server-address*
+             *erver-port*
              main
              run-main))
