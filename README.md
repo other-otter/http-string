@@ -35,8 +35,8 @@ rlwrap sbcl
 ## setup
 
 ```common-lisp
-(defparameter *http-string::the-server-address* "127.0.0.1")
-(defparameter *http-string::the-server-port* 8080)
+(defparameter http-string::*the-server-address* "127.0.0.1")
+(defparameter http-string::*the-server-port* 8080)
 
 ;http-string::the-server-address 
 ;     type: string
