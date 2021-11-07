@@ -13,6 +13,7 @@ package http-string-mini is some function of http-string
 
 ```common-lisp
 ;sbcl quicklisp libuv
+;apt install libuv1-dev
 ```
 
 ## load
