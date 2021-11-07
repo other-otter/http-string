@@ -1,7 +1,7 @@
 (in-package :http-string)
 
 (defparameter *the-server-address* "::1")
-(defparameter *he-server-port* 5000)
+(defparameter *the-server-port* 5000)
 
 (defun string-server ()
     (as:tcp-server *the-server-address* *the-server-port*
