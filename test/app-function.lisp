@@ -26,6 +26,8 @@
 (http-string::add-app "/test" #'app-test)
 (http-string::add-app "/help" #'app-helper)
 
+(http-string::run-main)
+
 ;http://[::1]:5000/test?a=1&aa=2
 
 (defun app-test (the-list)
@@ -49,4 +51,3 @@
 
 (http-string::add-app "/test" #'app-test)
 
-(http-string::run-main)
