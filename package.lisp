@@ -2,7 +2,6 @@
 
 (defpackage #:http-string
     (:use :cl :cl-user)
-    (:documentation "https://github.com/other-otter/http-string/blob/main/README.md")
     (:export split-string
              read-input-string
              function-map
@@ -19,14 +18,3 @@
              *erver-port*
              main
              run-main))
-
-(defpackage #:http-string-mini
-    (:use :cl :cl-user)
-    (:documentation "https://github.com/other-otter/http-string/blob/main/README.md")
-    (:export split-string
-             read-input-string
-             err-map
-             print-http-field
-             make-http-string
-             add-err
-             make-output-string))
