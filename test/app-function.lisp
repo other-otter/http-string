@@ -11,7 +11,7 @@
 (defun app-test (the-list)
     (let (  (return-hair-number 200)
             (return-face-list   (list "Content-Type: text/html"
-                                      (format nil "X-node: ~A" http-string::*the-server-address*) 
+                                      (format nil "X-node: ~A" http-string::*server-address*) 
                                       "X-power: common-lisp"
                                       (format nil "X-local-time: ~A" (local-time:now))))
             (return-body-string (format nil 
