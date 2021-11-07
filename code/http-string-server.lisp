@@ -1,10 +1,10 @@
 (in-package :http-string)
 
-(defparameter *the-server-address* "::1")
-(defparameter *the-server-port* 5000)
+(defparameter *server-address* "::1")
+(defparameter *server-port* 5000)
 
 (defun string-server ()
-    (as:tcp-server *the-server-address* *the-server-port*
+    (as:tcp-server *server-address* *server-port*
         (lambda (the-socket the-data) 
             (format t "(~A) [->] ~a~%" (local-time:now) the-socket) (finish-output)
             (let ((the-string (make-output-string (ignore-errors (user-function-map (read-input-string (babel:octets-to-string the-data)))))))
