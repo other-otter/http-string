@@ -133,7 +133,7 @@ https://github.com/other-otter/http-string/blob/main/test/app-function.lisp
 
 ```common-lisp
 (http-string::run-main)
-;http-string::main is start in main thread
+;http-string::main is start in current thread
 ;http-string::run-main is start in other thread
 ```
 
