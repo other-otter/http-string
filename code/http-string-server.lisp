@@ -28,5 +28,6 @@
     (as:start-event-loop #'string-server))
 
 (defun run-main ()
-    (bordeaux-threads:make-thread (lambda ()
-        (as:start-event-loop #'string-server))))
+    (bordeaux-threads:make-thread 
+        (lambda ()
+            (as:start-event-loop #'string-server))))
