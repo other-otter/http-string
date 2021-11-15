@@ -39,7 +39,7 @@
         (let (  (user-var-a (http-string::get-field input-var-list "a"))
                 (user-host (http-string::get-field input-field-list "Host:")))
             (let ( (return-face-list (list  "Content-Type: text/html"
-                                            (format nil "X-node: ~A" http-string::the-server-address) 
+                                            (format nil "X-node: ~A" http-string::*server-address*) 
                                             "X-power: common-lisp with libuv"
                                             (format nil "X-local-time: ~A" (local-time:now))))
                     (return-body-string (format nil 
